@@ -1,0 +1,663 @@
+.frame {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .div {
+  background-color: #ffffff;
+  height: 1440px;
+  position: relative;
+  width: 2200px;
+}
+
+.frame .overlap-group {
+  border-radius: 100px;
+  height: 1250px;
+  left: 1125px;
+  position: absolute;
+  top: 140px;
+  width: 1025px;
+}
+
+.frame .rectangle {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 25%,
+    rgba(164, 164, 164, 1) 46%,
+    rgba(164, 164, 164, 1) 61%,
+    rgba(72, 72, 72, 1) 89%
+  );
+  border-radius: 33px;
+  height: 100px;
+  left: 109px;
+  position: absolute;
+  top: 192px;
+  width: 808px;
+}
+
+.frame .rectangle-2 {
+  background: linear-gradient(
+    90deg,
+    rgba(241, 160, 106, 1) 0%,
+    rgba(250, 222, 159, 1) 25%,
+    rgba(255, 255, 255, 1) 49%,
+    rgba(236, 249, 255, 1) 73%,
+    rgba(210, 238, 252, 1) 100%
+  );
+  border-radius: 33px;
+  height: 100px;
+  left: 109px;
+  position: absolute;
+  top: 580px;
+  width: 808px;
+}
+
+.frame .rectangle-3 {
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 100px;
+  height: 1250px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1025px;
+}
+
+.frame .text-wrapper {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  left: 218px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 66px;
+  width: 589px;
+}
+
+.frame .TEMPERATURA-BARWOWA {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  left: 218px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 405px;
+  width: 589px;
+}
+
+.frame .text-wrapper-2 {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  left: 218px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 791px;
+  width: 589px;
+}
+
+.frame .rectangle-4 {
+  background-color: #fcfcfc;
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 54px;
+  height: 180px;
+  left: 109px;
+  position: absolute;
+  top: 152px;
+  width: 180px;
+}
+
+.frame .rectangle-5 {
+  background-color: #fcfcfc;
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 54px;
+  height: 180px;
+  left: 423px;
+  position: absolute;
+  top: 535px;
+  width: 180px;
+}
+
+.frame .rectangle-6 {
+  background-color: #5b5b5b;
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 54px;
+  height: 180px;
+  left: 737px;
+  position: absolute;
+  top: 152px;
+  width: 180px;
+}
+
+.frame .rectangle-7 {
+  background-color: #f9c993;
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 54px;
+  height: 180px;
+  left: 109px;
+  position: absolute;
+  top: 535px;
+  width: 180px;
+}
+
+.frame .rectangle-8 {
+  background-color: #009bd7;
+  border-radius: 33px;
+  height: 100px;
+  left: 109px;
+  position: absolute;
+  top: 904px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-9 {
+  background-color: #00cdac;
+  border-radius: 33px;
+  height: 100px;
+  left: 243px;
+  position: absolute;
+  top: 904px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-10 {
+  background-color: #0020f3b8;
+  border-radius: 33px;
+  height: 100px;
+  left: 109px;
+  position: absolute;
+  top: 1030px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-11 {
+  background-color: #ff8800;
+  border-radius: 33px;
+  height: 100px;
+  left: 377px;
+  position: absolute;
+  top: 904px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-12 {
+  background-color: #ffcdf2;
+  border-radius: 33px;
+  height: 100px;
+  left: 377px;
+  position: absolute;
+  top: 1030px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-13 {
+  background-color: #ce15b5;
+  border-radius: 33px;
+  height: 100px;
+  left: 243px;
+  position: absolute;
+  top: 1030px;
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-8:hover,
+.frame .rectangle-9:hover,
+.frame .rectangle-10:hover,
+.frame .rectangle-11:hover,
+.frame .rectangle-12:hover,
+.frame .rectangle-13:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.5);
+}
+
+.frame .selected-color {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 136, 0, 0.8);
+  border: 3px solid #ff8800;
+}
+
+.frame .rectangle-14 {
+  background-color: #d1ecfd;
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 54px;
+  height: 180px;
+  left: 737px;
+  position: absolute;
+  top: 535px;
+  width: 180px;
+}
+
+.frame .color-wheel-container {
+  position: relative;
+}
+
+.frame .gradient {
+  height: 324px;
+  left: 593px;
+  position: absolute;
+  top: 855px;
+  width: 324px;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+
+.frame .thumb {
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 35.5px / 36.5px;
+  box-shadow: 0px 1px 2px #00000026;
+  height: 73px;
+  position: absolute;
+  width: 71px;
+  cursor: grab;
+  z-index: 10;
+  transition: left 0.2s, top 0.2s, background-color 0.3s;
+  touch-action: none;
+}
+
+.frame .thumb:active {
+  cursor: grabbing;
+  box-shadow: 0 0 20px rgba(255, 136, 0, 0.8);
+}
+
+.frame .rectangle-15 {
+  background-color: #cbcbcb;
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 54px;
+  height: 180px;
+  left: 423px;
+  position: absolute;
+  top: 152px;
+  width: 180px;
+}
+
+.frame .text-wrapper-3 {
+  color: #5b5b5be6;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+}
+
+.frame .text-wrapper-4 {
+  color: #5b5b5b;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+}
+
+.frame .text-wrapper-5 {
+  color: #fcfcfce6;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+}
+
+.frame .element-k {
+  color: #48484899;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+}
+
+.frame .element-k-2 {
+  color: #48484899;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+}
+
+.frame .element-k-3 {
+  color: #48484899;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+}
+
+.frame .overlap {
+  background-color: #484848;
+  border: 10px solid;
+  border-color: #00cdac;
+  border-radius: 100px;
+  height: 580px;
+  left: 50px;
+  position: absolute;
+  top: 140px;
+  width: 583px;
+}
+
+.frame .ellipse {
+  background-color: #ffffffd4;
+  border: 10px solid;
+  border-color: #009bd7;
+  border-radius: 57.5px;
+  height: 115px;
+  left: 128px;
+  position: absolute;
+  top: 171px;
+  width: 115px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .ellipse-2 {
+  background-color: #ffffffd4;
+  border: 10px solid;
+  border-color: #00cdac;
+  border-radius: 57.5px;
+  height: 115px;
+  left: 321px;
+  position: absolute;
+  top: 48px;
+  width: 115px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .ellipse-3 {
+  background-color: #ffffffd4;
+  border: 10px solid;
+  border-color: #ff8800;
+  border-radius: 57.5px;
+  height: 115px;
+  left: 128px;
+  position: absolute;
+  top: 397px;
+  width: 115px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .ellipse:hover,
+.frame .ellipse-2:hover,
+.frame .ellipse-3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.5);
+}
+
+.frame .selected,
+.frame .selected-brightness,
+.frame .selected-temperature {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 136, 0, 0.8);
+}
+
+.frame .rectangle-4,
+.frame .rectangle-15,
+.frame .rectangle-6,
+.frame .rectangle-7,
+.frame .rectangle-5,
+.frame .rectangle-14 {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-4:hover,
+.frame .rectangle-15:hover,
+.frame .rectangle-6:hover,
+.frame .rectangle-7:hover,
+.frame .rectangle-5:hover,
+.frame .rectangle-14:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 136, 0, 0.5);
+}
+
+.frame .overlap-2 {
+  background-color: #484848;
+  border: 10px solid;
+  border-color: #00cdac;
+  border-radius: 100px;
+  height: 580px;
+  left: 683px;
+  position: absolute;
+  top: 140px;
+  width: 392px;
+}
+
+.frame .p {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 49px;
+  width: 1025px;
+}
+
+.frame .text-wrapper-6 {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  left: 1125px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 49px;
+  width: 1025px;
+}
+
+.frame .text-wrapper-7 {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 829px;
+  width: 1025px;
+}
+
+.frame .overlap-3 {
+  border-radius: 100px;
+  height: 473px;
+  left: 50px;
+  position: absolute;
+  top: 920px;
+  width: 1025px;
+}
+
+.frame .RELAKS-RELAX {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  left: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 51px;
+  width: 207px;
+}
+
+.frame .PRACA-WORK {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  left: 289px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 51px;
+  width: 207px;
+}
+
+.frame .ZABAWA-PLAY {
+  color: #000000;
+  font-family: "Gothic A1", Helvetica;
+  font-size: 36px;
+  font-weight: 600;
+  left: 656px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 51px;
+  width: 196px;
+}
+
+.frame .rectangle-16 {
+  border: 10px solid;
+  border-color: #009bd7;
+  border-radius: 100px;
+  height: 473px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1025px;
+}
+
+.frame .rectangle-17 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 136, 0, 1) 0%,
+    rgba(116, 52, 53, 1) 100%
+  );
+  border-radius: 62px;
+  height: 277px;
+  left: 48px;
+  position: absolute;
+  top: 153px;
+  width: 207px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-work {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 155, 215, 1) 0%,
+    rgba(0, 205, 172, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 62px;
+  height: 277px;
+  left: 289px;
+  position: absolute;
+  top: 153px;
+  width: 207px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-18 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 205, 242, 1) 0%,
+    rgba(206, 21, 181, 1) 50%,
+    rgba(67, 55, 235, 1) 100%
+  );
+  border-radius: 62px;
+  height: 277px;
+  left: 530px;
+  position: absolute;
+  top: 153px;
+  width: 207px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-play {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 205, 242, 1) 0%,
+    rgba(95, 60, 255, 1) 50%,
+    rgba(0, 32, 243, 0.72) 100%
+  );
+  border-radius: 62px;
+  height: 277px;
+  left: 771px;
+  position: absolute;
+  top: 153px;
+  width: 207px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.frame .rectangle-17:hover,
+.frame .rectangle-work:hover,
+.frame .rectangle-18:hover,
+.frame .rectangle-play:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 155, 215, 0.5);
+}
+
+.frame .selected-scene {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 155, 215, 0.8);
+  border: 3px solid #009bd7;
+}
