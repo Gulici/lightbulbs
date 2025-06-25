@@ -102,6 +102,10 @@ public class BulbService {
             throw new IllegalArgumentException("Scene ID " + sceneId + " not found in config");
         }
 
+        for (Bulb bulb : bulbMap.values()) {
+            turnOff(bulb.getId());
+        }
+
         for (Map.Entry<String, JsonElement> entry : scene.entrySet()) {
             int id = Integer.parseInt(entry.getKey());
             JsonObject params = entry.getValue().getAsJsonObject();

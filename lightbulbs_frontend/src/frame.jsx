@@ -1,6 +1,47 @@
 import React, { useState } from "react";
 import "../style.css";
 
+class Bulb {
+  constructor() {
+    this.r = 0;
+    this.g = 0;
+    this.b = 0;
+    this.d = 50;
+    this.t = 0;
+    this.isOn = false;
+  }
+
+  setRGB(r,g,b) {
+    this.r = this.#clampRGB(r);
+    this.g = this.#clampRGB(g);
+    this.b = this.#clampRGB(b);
+  }
+
+  setD(d) {
+    this.d = this.#clampD(d);
+  }
+
+  #clampRGB(value) {
+    return Math.max(0, Math.min(255,value));
+  }
+
+  turnOn() {
+    this.isOn = true;
+  }
+
+  turnOff() {
+    this.isOn = false;
+  }
+
+  toggle() {
+    this.isOn = !this.isOn;
+  }
+
+  #clampD(value) {
+    return Math.max(0, Math.min(100,value));
+  }
+}
+
 export const Frame = () => {
   const [selectedWheel, setSelectedWheel] = useState(null);
   const [selectedScene, setSelectedScene] = useState(null);
@@ -10,6 +51,15 @@ export const Frame = () => {
   const [selectedColorType, setSelectedColorType] = useState(null); // 'temperature' or 'hue'
   const [wheelPosition, setWheelPosition] = useState({ x: 621, y: 1017 });
   const [thumbColor, setThumbColor] = useState('#5f3cff');
+
+  const sendCommandBrightness = async () => {
+    if (selectedWheel === null) return;
+    await fetch('http://192.168.100.3:8080/api/${selectedWheel}/temp', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({id, d})
+    });
+  }
 
   const handleWheelClick = (wheelIndex) => {
     setSelectedWheel(wheelIndex);
@@ -21,6 +71,7 @@ export const Frame = () => {
   
   const handleBrightnessClick = (brightnessIndex) => {
     setSelectedBrightness(brightnessIndex);
+    sendCommandBrightness();
   };
   
   const handleTemperatureClick = (temperatureIndex) => {
