@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Component
 @Getter
@@ -22,7 +23,8 @@ public class SceneConfigProvider {
         String fileName = "config.json";
 
         try {
-            Path externalPath = Path.of(fileName);
+            Path jarDir = Paths.get(System.getProperty("java.class.path")).toAbsolutePath().getParent();
+            Path externalPath = jarDir.resolve(fileName);
             if (Files.exists(externalPath)) {
                 try (InputStreamReader reader = new InputStreamReader(
                         Files.newInputStream(externalPath), StandardCharsets.UTF_8)) {

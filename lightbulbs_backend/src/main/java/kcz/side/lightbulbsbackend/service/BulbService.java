@@ -126,11 +126,15 @@ public class BulbService {
         data.add("params", params);
 
         InetAddress address = bulb.getAddress();
-        sendUdpPacket(data, address);
+        try {
+            sendUdpPacket(data, address);
+        } catch (RuntimeException e) {
+            log.error("Error sending packet", e);
+        }
     }
 
 
-    private void sendUdpPacket(JsonObject dataJson, InetAddress ip) {
+    private void sendUdpPacket(JsonObject dataJson, InetAddress ip) throws RuntimeException {
         final int port = 38899;
         final int maxRetries = 4;
         final int timeoutMillis = 250;
