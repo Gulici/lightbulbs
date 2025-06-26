@@ -2,7 +2,7 @@
 
 ## 1. Uruchomienie aplikacji ręcznie
 
-1. Skopiuj plik `lightbulbs-backend-0.0.1-SNAPSHOT.jar` oraz plik `start-app.bat` do jednego folderu na komputerze, np. `C:\lightbulbs\`.
+1. Skopiuj plik zawartość katalogu `\dist` do jednego folderu na komputerze, np. `C:\lightbulbs\`.
 
 2. Dwukrotnie kliknij plik `start-app.bat`.  
    - Spowoduje to uruchomienie aplikacji w nowym oknie konsoli.  
