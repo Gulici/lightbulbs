@@ -1,4 +1,4 @@
-# Instrukcja uruchomienia aplikacji Lightbulbs Backend na Windows
+# Instrukcja uruchomienia aplikacji Lightbulbs na Windows
 
 ## 1. Uruchomienie aplikacji ręcznie
 
