@@ -29,3 +29,38 @@
 
 2. W przeglądarce internetowej wpisz adres: `http://<adres_ip>` 
 3. Powinien pojawić się frontend aplikacji.
+
+## 4. Edycja konfiguracji presetów scen i adresów żarówek
+
+Konfiguracja odbywa się poprzez plik `config.json` znajdujący się w tym samym katalogu co aplikacja.
+
+### 1. Edycja scen
+
+- W sekcji `"scenes"` znajdują się nazwy scen (`work`, `relax`, `play`, `gradient` itd.).
+- Każda scena zawiera mapowanie numerów żarówek na ich ustawienia świetlne.
+- Ustawienia mogą zawierać:
+  - `"temp"` – temperatura barwowa światła w Kelwinach (np. 4000),
+  - `"dimming"` – jasność w procentach (np. 60),
+  - lub kolor RGB (`"r"`, `"g"`, `"b"`) w zakresie 0-255.
+- Przykład wpisu sceny:
+
+```json
+"work": {
+  "2": { "temp": 4000, "dimming": 60 },
+  "3": { "temp": 6500, "dimming": 100 }
+}
+```
+- Możesz dodać nowe sceny lub zmieniać istniejące, dopasowując ustawienia do potrzeb.
+
+### 2. Edycja adresów IP żarówek 
+
+- W sekcji `bulbs` znajduje się mapowanie numerów żarówek na ich adresy IP w sieci lokalnej.
+
+```json
+"bulbs": {
+  "1": "192.168.100.100",
+  "2": "192.168.100.101"
+}
+```
+
+- Zmodyfikuj adresy IP tak, aby odpowiadały faktycznym adresom Twoich żarówek.
