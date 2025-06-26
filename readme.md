@@ -2,18 +2,17 @@
 
 ## 1. Uruchomienie aplikacji ręcznie
 
-1. Skopiuj plik zawartość katalogu `\dist` do jednego folderu na komputerze, np. `C:\lightbulbs\`.
+1. Skopiuj zawartość katalogu `\dist` do jednego folderu na komputerze, np. `C:\lightbulbs\`.
 
 2. Dwukrotnie kliknij plik `start-app.bat`.  
    - Spowoduje to uruchomienie aplikacji w nowym oknie konsoli.  
-   - Logi aplikacji będą zapisywane w pliku `app.log` w tym samym folderze.
 
 ## 2. Dodanie aplikacji do autostartu (uruchamianie przy starcie systemu)
 
 1. Naciśnij `Win + R`, wpisz `shell:startup` i naciśnij Enter.  
    - Otworzy się folder Autostartu użytkownika.
 
-2. Skopiuj skrót do pliku `start-app.bat` do tego folderu.  
+2. Skopiuj skrót pliku `start-app.bat` do tego folderu.  
    - Możesz utworzyć skrót klikając prawym przyciskiem na `start-app.bat` → **Wyślij do** → **Pulpit (utwórz skrót)**, a następnie przenieść ten skrót do folderu Autostartu.
 
 3. Przy następnym uruchomieniu systemu skrypt uruchomi automatycznie aplikację.
